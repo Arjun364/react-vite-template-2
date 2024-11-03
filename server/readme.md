@@ -1,11 +1,16 @@
 # It is template for the backend of the project
     package.json:+ npm init
-    json server :+ npm i json-server
+    express :+ npm i express
+    cors :+ npm i cors
+    dotenv :+ npm i dotenv
+    mongoose :+ npm i mongoose
+    mongoDB :+ npm i mongodb
+
 
 # use npm i before setting template
 
 # launch server
-    npx json-server db.json
+    nodemon index.js
 
 # Reference
     jsonplaceholder: https://jsonplaceholder.typicode.com/

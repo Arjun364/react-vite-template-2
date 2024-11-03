@@ -35,3 +35,12 @@
   @apply text-[18px] font-poppins ;
 }
 
+/* btn class */
+.btn{
+  @apply w-full h-[3rem] bg-blue-600 border-2 border-solid border-black text-white font-bold rounded-md;
+}
+
+/* txt box */
+.txtbox{
+  @apply border-2 border-solid border-black;
+}
