@@ -12,7 +12,8 @@ const PORT = 4000
 // middlewares for the server
 server.use(cors())
 server.use(express.json())
-
+// Db connection
+const DB = require('./DB/connections')
 // default API port
 server.get('/',(req,res)=>{
     res.status(200).send(`Welcome to the Server , PORT is ${PORT}`)
