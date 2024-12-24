@@ -4,6 +4,8 @@ require('dotenv').config();
 const express = require('express')
 // import cors to connect between the server host and client host
 const cors =require('cors')
+//import the router
+const router = require('./Router/router')
 // create a server using express
 const server = express()
 // create a port for the server to run :4000
@@ -12,6 +14,7 @@ const PORT = 4000
 // middlewares for the server
 server.use(cors())
 server.use(express.json())
+server.use(router)
 // Db connection
 const DB = require('./DB/connections')
 // default API port
